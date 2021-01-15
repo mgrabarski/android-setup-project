@@ -23,14 +23,11 @@ jobs:
           name: Run Ktlint
           command: ./gradlew ktlint
       - run:
-          name: Run Lint
-          command: ./gradlew lint --stacktrace
-      - run:
           name: Run Spotless
           command: ./gradlew spotlessKotlinCheck
       - run:
           name: Run Tests
-          command: ./gradlew lint test
+          command: ./gradlew test
       - run:
           name: Generate Code Coverage
           command: ./gradlew jacocoTestReportDevDebug
