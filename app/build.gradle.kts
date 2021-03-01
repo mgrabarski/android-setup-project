@@ -7,7 +7,6 @@ import extensions.implementation
 plugins {
     id(BuildPlugins.ANDROID_APPLICATION)
     id(BuildPlugins.KOTLIN_ANDROID)
-    id(BuildPlugins.KOTLIN_ANDROID_EXTENSIONS)
     id(BuildPlugins.KOTLIN_KAPT)
     id(BuildPlugins.KOTLIN_ALLOPEN)
     id(BuildPlugins.NAVIGATION_SAFE_ARGS)
