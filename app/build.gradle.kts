@@ -15,11 +15,6 @@ plugins {
     id(BuildPlugins.GRAPH_GENERATOR)
 }
 
-allOpen {
-    // allows mocking for classes w/o directly opening them for release builds
-    annotation("com.vmadalin.core.annotations.OpenClass")
-}
-
 android {
     compileSdkVersion(BuildAndroidConfig.COMPILE_SDK_VERSION)
     defaultConfig {
